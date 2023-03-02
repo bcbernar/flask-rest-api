@@ -119,6 +119,16 @@ paths:
       responses:
         "201":
           description: "Successfully created a note"
+          
+    get:
+      tags:
+        - Notes
+      operationId: "notes.read_all"
+      summary: "Read the list of notes"
+      responses:
+        "200":
+          description: "Sucessfully read notes list"
+          
   /notes/{note_id}:
     get:
       operationId: "notes.read_one"
